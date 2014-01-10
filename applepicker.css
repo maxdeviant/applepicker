@@ -1,0 +1,90 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+.container {
+	width: 900px;
+	margin: 0 auto;
+	text-align: center
+}
+
+#game {
+	margin: 50px 0 0 0;
+}
+
+.left-pane {
+	width: 500px;
+	float: left;
+}
+
+.right-pane {
+	float: right;
+}
+
+#selected {
+	display: inline;
+}
+
+#upgrades:target, #research:target {
+	display: block;
+}
+
+.active {
+	text-decoration: underline;
+}
+
+.tabs li {
+	display: inline;
+	text-decoration: none;
+}
+
+.tabs a {
+	padding: 10px;
+	color: black;
+	text-decoration: none;
+}
+
+.tabs a:hover {
+	text-decoration: underline;
+}
+
+.tab {
+	list-style-type: none;
+	height: 400px;
+	width: 400px;
+	overflow-y: scroll;
+	display: none;
+}
+
+.upgrades, .research {
+	height: 400px;
+	overflow-y: scroll;
+}
+
+.element {
+	padding: 10px 0 0 0;
+}
+
+.cost {
+	width: 200px;
+}
+
+.count {
+	width: 150px;
+}
+
+.token {
+	position: absolute;
+	pointer-events: none;
+}
+
+#tree, .upgrades:hover {
+	cursor: pointer;
+}

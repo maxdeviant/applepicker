@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Apple Picker</title>
+
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="applepicker.css">
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<script src="sprintf.min.js"></script>
+	<script src="applepicker.js"></script>
+	<script src="upgrades.js"></script>
+	<script src="research.js"></script>
+	<script src="save-load.js"></script>
+</head>
+<body onload="init()">
+	<div class="container">
+		<h1>Apple Picker</h1>
+		<h3 id="version"></h3>
+		<button id="save">Save</button>
+		<div id="game">
+			<div class="left-pane">
+				<p id="apples">0 apples</p>
+				<p id="aps">0 apples per second</p>
+				<div class="tree">
+					<img id="tree" src="res/tree.svg" width="50%" height="50%"></img>
+				</div>
+			</div>
+			<div class="right-pane">
+				<!-- <h2>Upgrades</h2> -->
+				<ul class="tabs">
+					<li><a href="#upgrades">Upgrades</a></li>
+					<li><a href="#research">Research</a></li>
+				</ul>
+				<div id="upgrades" class="tab upgrades"></div>
+				<div id="research" class="tab research"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
